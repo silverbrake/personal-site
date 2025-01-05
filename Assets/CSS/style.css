@@ -362,7 +362,7 @@ footer .container{
 
 /* Mobile Responsive Under Here */
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -515,7 +515,7 @@ footer .container{
     }
 }
 
-@media only screen and (min-width: 380px) and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
     * {
         margin: 0;
         padding: 0;
