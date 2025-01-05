@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-family: "Lexend", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
@@ -92,7 +91,7 @@ button {
 }
 
 button:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 button a {
@@ -154,7 +153,8 @@ button a {
 
 .headline {
     font-size: 3rem;
-    margin: 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .secondary_color {
@@ -214,7 +214,7 @@ button a {
 
 #my_skill {
     height: auto;
-    width: 100wh;
+    width: 100%;
     margin: 100px 0px;
 }
 
@@ -225,7 +225,7 @@ button a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 200px;
-    grid-row: 20px;
+    grid-row: auto;
     margin-top: 100px;
 }
 
@@ -362,7 +362,7 @@ footer .container{
 
 /* Mobile Responsive Under Here */
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -424,7 +424,7 @@ footer .container{
 
     .headline{
         font-size: 28px;
-        margin-bottom: 16px 0;
+        margin-bottom: 16px;
     }
 
     .service_cards {
