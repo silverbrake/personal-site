@@ -362,7 +362,7 @@ footer .container{
 
 /* Mobile Responsive Under Here */
 
-@media (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -515,7 +515,7 @@ footer .container{
     }
 }
 
-@media (min-width: 380px) and (max-width: 430px) {
+@media only screen and (min-width: 380px) and (max-width: 430px) {
     * {
         margin: 0;
         padding: 0;
