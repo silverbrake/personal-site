@@ -362,7 +362,7 @@ footer .container{
 
 /* Mobile Responsive Under Here */
 
-@media (max-width: 1024px) {
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -431,7 +431,7 @@ footer .container{
         width: 720px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         padding-bottom: 50px;
         justify-content: center;
         gap: 30px;
@@ -515,7 +515,7 @@ footer .container{
     }
 }
 
-@media (max-width: 430px) {
+@media (min-width: 380px) and (max-width: 430px) {
     * {
         margin: 0;
         padding: 0;
@@ -554,9 +554,27 @@ footer .container{
         height: 400px;
     }
 
-    .intro p {
-        padding-right: 50px;
+    .intro {
+        padding-bottom: 50px;
     }
+
+    .intro p {
+        padding-right: 0px !important;
+    }
+
+    .intro .socmed {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+    .socmed a i{
+        width: 30px;
+        margin-right: 0px !important;
+
+    }    
 
     .name {
         font-size: 2.5rem;
@@ -585,24 +603,25 @@ footer .container{
         font-size: 18px;
     }
 
-    .section-title {
-        padding-top: 50px;
+    .skill_title {
+        margin-top: 10px;
     }
 
-    .section-title h3{
-        font-size: 18px;
+    .skill_title h3{
+        font-size: 16px;
+        margin-bottom: 5px !important;
     }
 
-    .headline{
-        font-size: 28px;
-        margin-bottom: 16px 0;
+    .skill_title .headline{
+        font-size: 20px;
+
     }
 
     .service_cards {
-        width: 720px;
+        width: 430px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         padding-bottom: 50px;
         justify-content: center;
         gap: 30px;
@@ -652,12 +671,16 @@ footer .container{
     }
 
     .skill_set {
-        gap: 10px 80px;
+        gap: 10px 30px;
         margin-top: 50px;
     }
 
     .skill {
         height: 30px;
+    }
+
+    .skill i {
+        margin-right: 15px !important;
     }
 
     .progress_bar {
@@ -668,18 +691,31 @@ footer .container{
         height: 6px;;
     }
 
+    footer .container{
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .address {
+        margin-bottom: 20px !important;
+    }
+
     .address h2 {
         font-size: 24px;
+        margin-bottom: 0px !important;
     }
 
     .directory {
-        margin-left: 100px;
+        display: none;
     }
 
-    .directory a{
-        font-size: 14px;
+    .footer .socmed a {
+        display: flex;
+        justify-content: center;
     }
-
+    
     .footer-cta .cta a{
         padding: 20px 5px;
         font-size: 14px;
